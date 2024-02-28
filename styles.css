@@ -6,6 +6,10 @@
 }
 
 body {
+  color: #070f2b;
+}
+
+body {
   font-family: "Poppins", sans-serif;
 }
 
@@ -21,4 +25,28 @@ body {
 .header .header__logo {
   font-size: 20px;
   font-weight: 500;
+}
+
+.intro {
+  height: 600px;
+  background-color: #f9f9f9;
+  margin: 12px;
+  padding: 20px;
+}
+.intro .intro__greeting {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #7d7c7c;
+}
+.intro .intro__heading {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+.intro .intro__button {
+  background-color: #7fc7d9;
+  color: #f9f9f9;
+  text-decoration: none;
+  padding: 18px 20px;
+  border-radius: 4px;
 }/*# sourceMappingURL=styles.css.map */

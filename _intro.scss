@@ -1,0 +1,28 @@
+@use "./variables";
+
+.intro {
+    height: 600px;
+    background-color: variables.$light-gray;
+    margin: 12px;
+    padding: 20px;
+
+    .intro__greeting {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: variables.$dark-gray;
+    }
+
+    .intro__heading {
+        font-size: 42px;
+        font-weight: 600;
+        margin-bottom: 80px;
+    }
+
+    .intro__button {
+        background-color: variables.$secondary-color;
+        color: variables.$light-gray;
+        text-decoration: none;
+        padding: 18px 20px;
+        border-radius: 4px;
+    }
+}
