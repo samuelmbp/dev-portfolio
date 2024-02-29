@@ -1,3 +1,5 @@
+@use "./variables";
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -6,6 +8,10 @@
     padding: 18px;
 
     .nav {
+        display: none;
+    }
+
+    .header__desktop {
         display: none;
     }
 
@@ -18,6 +24,54 @@
         .header__logo--text {
             font-size: 16px;
             font-weight: 500;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        background-color: variables.$light-gray;
+        padding: 35px 95px;
+
+        .font__normal {
+            font-weight: 400;
+        }
+
+        .header__desktop {
+            display: block;
+            font-size: 18px;
+        }
+
+        .header__logo {
+            display: none;
+        }
+        .header__menu-icon {
+            display: none;
+        }
+
+        .nav {
+            display: block;
+
+            .nav__list {
+                display: flex;
+                gap: 38px;
+                list-style: none;
+
+                .nav__item {
+                    text-decoration: none;
+                    color: variables.$dark-gray;
+                }
+
+                .nav__button {
+                    font-size: 14px;
+                    background-color: variables.$secondary-color;
+                    padding: 10px 14px;
+                    color: variables.$dark-color;
+                    font-weight: 500;
+                    border-radius: 12px;
+                    border: 1px solid variables.$dark-color;
+                }
+            }
         }
     }
 }

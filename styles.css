@@ -8,6 +8,7 @@
 
 body {
   color: #070f2b;
+  background-color: #fffdf6;
 }
 
 h2,
@@ -29,6 +30,9 @@ body {
 .header .nav {
   display: none;
 }
+.header .header__desktop {
+  display: none;
+}
 .header .header__logo {
   display: flex;
   justify-content: center;
@@ -40,9 +44,48 @@ body {
   font-weight: 500;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    background-color: #f7fafa;
+    padding: 35px 95px;
+  }
+  .header .font__normal {
+    font-weight: 400;
+  }
+  .header .header__desktop {
+    display: block;
+    font-size: 18px;
+  }
+  .header .header__logo {
+    display: none;
+  }
+  .header .header__menu-icon {
+    display: none;
+  }
+  .header .nav {
+    display: block;
+  }
+  .header .nav .nav__list {
+    display: flex;
+    gap: 38px;
+    list-style: none;
+  }
+  .header .nav .nav__list .nav__item {
+    text-decoration: none;
+    color: #8c9cb1;
+  }
+  .header .nav .nav__list .nav__button {
+    font-size: 14px;
+    background-color: #ffc600;
+    padding: 10px 14px;
+    color: #000;
+    font-weight: 500;
+    border-radius: 12px;
+    border: 1px solid #000;
+  }
+}
 .intro {
   height: 550px;
-  background-color: #f7fafa;
   margin: 12px;
   padding: 20px;
 }
