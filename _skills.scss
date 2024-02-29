@@ -1,0 +1,25 @@
+.skills {
+    height: 300px;
+    margin: 12px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 45px;
+
+    .skills__heading {
+        margin-bottom: 45px;
+    }
+
+    .skills__icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;
+        gap: 35px;
+
+        .skills__icon {
+            width: 50px;
+            height: 40px;
+        }
+    }
+}
