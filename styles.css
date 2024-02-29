@@ -24,6 +24,12 @@ body {
   display: none;
 }
 .header .header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.header .header__logo .header__logo--text {
   font-size: 16px;
   font-weight: 500;
 }
@@ -89,7 +95,7 @@ body {
   margin-bottom: 45px;
 }
 .projects .projects__card {
-  width: 380px;
+  width: 290px;
   height: 550px;
   margin-top: 12px;
 }
