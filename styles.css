@@ -49,7 +49,7 @@ body {
 .intro .intro__greeting {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 15px;
 }
 .intro .intro__heading {
   font-size: 44px;
@@ -181,4 +181,9 @@ body {
 .footer .footer_copyright {
   color: #f7fafa;
   margin-top: 20px;
+}
+
+.underline {
+  border-bottom: 4mm solid #fff0ce;
+  display: inline-block;
 }/*# sourceMappingURL=styles.css.map */
