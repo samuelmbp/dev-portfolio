@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,12 +10,13 @@ body {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
+  gap: 38px;
   align-items: center;
   padding: 18px;
 }
@@ -23,29 +24,28 @@ body {
   display: none;
 }
 .header .header__logo {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 .intro {
   height: 600px;
-  background-color: #f9f9f9;
+  background-color: #f7fafa;
   margin: 12px;
   padding: 20px;
 }
 .intro .intro__greeting {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #7d7c7c;
 }
 .intro .intro__heading {
   font-size: 42px;
-  font-weight: 600;
+  font-weight: bold;
   margin-bottom: 80px;
 }
 .intro .intro__button {
-  background-color: #7fc7d9;
-  color: #f9f9f9;
+  background-color: #ffc600;
+  color: #000;
   text-decoration: none;
   padding: 18px 20px;
   border-radius: 4px;
