@@ -29,7 +29,7 @@ body {
 }
 
 .intro {
-  height: 600px;
+  height: 550px;
   background-color: #f7fafa;
   margin: 12px;
   padding: 20px;
@@ -37,9 +37,10 @@ body {
 .intro .intro__greeting {
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 20px;
 }
 .intro .intro__heading {
-  font-size: 42px;
+  font-size: 44px;
   font-weight: bold;
   margin-bottom: 80px;
 }
@@ -73,4 +74,63 @@ body {
 .skills .skills__icons .skills__icon {
   width: 50px;
   height: 40px;
+}
+
+.projects {
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+}
+.projects .projects__heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.projects .projects__card {
+  width: 290px;
+  height: 550px;
+  margin-top: 12px;
+}
+.projects .projects__card .image__container {
+  background-color: #f7fafa;
+  overflow: hidden;
+  height: 240px;
+  width: 100%;
+}
+.projects .projects__card .projects__card-image {
+  width: 100%;
+}
+.projects .projects__card .projects__card-body {
+  margin-top: 24px;
+}
+.projects .projects__card .projects__card-body .projects__card-language {
+  color: #ffc600;
+  font-size: 12px;
+}
+.projects .projects__card .projects__card-body .projects__card-subheading {
+  font-size: 22px;
+  margin-top: 10px;
+}
+.projects .projects__card .projects__card-body .projects__card-description {
+  margin-top: 24px;
+  color: #7d7c7c;
+}
+.projects .projects__card .projects__card-body .card__buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.projects .projects__card .projects__card-body .card__buttons .card__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.projects .projects__card .projects__card-body .card__buttons .card__button {
+  text-decoration: none;
+  color: #070f2b;
+  font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,74 @@
+@use "./variables";
+
+.projects {
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+
+    .projects__heading {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .projects__card {
+        width: 290px; // Responsive (IPHONE SE)
+        // width: 380px; // Responsive on all other mobile devices.
+        height: 550px;
+        margin-top: 12px;
+
+        .image__container {
+            background-color: variables.$light-gray;
+            // border-top-left-radius: 10px;
+            // border-top-right-radius: 10px;
+            overflow: hidden;
+            height: 240px;
+            width: 100%;
+        }
+
+        .projects__card-image {
+            width: 100%;
+        }
+
+        .projects__card-body {
+            margin-top: 24px;
+
+            .projects__card-language {
+                color: variables.$secondary-color;
+                font-size: 12px;
+            }
+
+            .projects__card-subheading {
+                font-size: 22px;
+                margin-top: 10px;
+            }
+
+            .projects__card-description {
+                margin-top: 24px;
+                color: variables.$dark-gray;
+            }
+
+            .card__buttons {
+                margin-top: 20px;
+                display: flex;
+                gap: 12px;
+                align-items: center;
+
+                .card__flex {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 7px;
+                }
+
+                .card__button {
+                    text-decoration: none;
+                    color: variables.$primary-color;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

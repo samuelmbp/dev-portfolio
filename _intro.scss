@@ -1,7 +1,7 @@
 @use "./variables";
 
 .intro {
-    height: 600px;
+    height: 550px;
     background-color: variables.$light-gray;
     margin: 12px;
     padding: 20px;
@@ -9,10 +9,11 @@
     .intro__greeting {
         margin-top: 20px;
         margin-bottom: 20px;
+        font-size: 20px;
     }
 
     .intro__heading {
-        font-size: 42px;
+        font-size: 44px;
         font-weight: bold;
         margin-bottom: 80px;
     }
