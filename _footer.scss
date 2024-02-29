@@ -1,0 +1,23 @@
+@use "./variables";
+
+.footer {
+    background-color: variables.$primary-color;
+    padding: 20px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .footer__icons {
+        .footer__icon {
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+    .footer_copyright {
+        color: variables.$light-gray;
+        margin-top: 20px;
+    }
+}
