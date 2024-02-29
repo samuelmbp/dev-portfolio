@@ -1,12 +1,13 @@
 @use "./variables";
 
 .projects {
-    margin: 4px;
+    // margin: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 45px;
+    margin-bottom: 100px;
 
     .projects__heading {
         text-align: center;
@@ -14,8 +15,8 @@
     }
 
     .projects__card {
-        width: 290px; // Responsive (IPHONE SE)
-        // width: 380px; // Responsive on all other mobile devices.
+        // width: 290px; // Responsive (IPHONE SE)
+        width: 380px; // Responsive on all other mobile devices.
         height: 550px;
         margin-top: 12px;
 

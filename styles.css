@@ -55,7 +55,6 @@ body {
 
 .skills {
   height: 300px;
-  margin: 12px;
   padding: 20px;
   text-align: center;
   margin-top: 45px;
@@ -70,6 +69,7 @@ body {
   justify-items: center;
   align-items: center;
   gap: 35px;
+  margin: 20px;
 }
 .skills .skills__icons .skills__icon {
   width: 50px;
@@ -77,19 +77,19 @@ body {
 }
 
 .projects {
-  margin: 4px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 45px;
+  margin-bottom: 100px;
 }
 .projects .projects__heading {
   text-align: center;
   margin-bottom: 45px;
 }
 .projects .projects__card {
-  width: 290px;
+  width: 380px;
   height: 550px;
   margin-top: 12px;
 }
@@ -133,4 +133,22 @@ body {
   text-decoration: none;
   color: #070f2b;
   font-weight: bold;
+}
+
+.about {
+  padding: 35px;
+  margin-bottom: 100px;
+}
+.about .about__heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.about .about__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about .about__description {
+  margin-top: 30px;
+  color: #7d7c7c;
 }/*# sourceMappingURL=styles.css.map */
