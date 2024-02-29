@@ -30,7 +30,7 @@
 
 @media screen and (min-width: 768px) {
     .header {
-        background-color: variables.$light-gray;
+        // background-color: variables.$light-gray;
         padding: 35px 95px;
 
         .font__normal {
@@ -39,7 +39,7 @@
 
         .header__desktop {
             display: block;
-            font-size: 18px;
+            font-size: 20px;
         }
 
         .header__logo {

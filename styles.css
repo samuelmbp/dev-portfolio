@@ -46,7 +46,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .header {
-    background-color: #f7fafa;
     padding: 35px 95px;
   }
   .header .font__normal {
@@ -54,7 +53,7 @@ body {
   }
   .header .header__desktop {
     display: block;
-    font-size: 18px;
+    font-size: 20px;
   }
   .header .header__logo {
     display: none;
@@ -108,6 +107,30 @@ body {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .intro {
+    background-color: #f7fafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+  .intro .flex__container {
+    width: 65%;
+    text-align: center;
+  }
+  .intro .flex__container .intro__greeting {
+    font-size: 26px;
+  }
+  .intro .flex__container .intro__heading {
+    font-size: 55px;
+  }
+  .intro .flex__container .intro__button {
+    border: 1px solid #000;
+    font-weight: 600;
+  }
+}
 .skills {
   height: 300px;
   padding: 20px;
