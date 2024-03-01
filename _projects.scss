@@ -90,6 +90,25 @@
 
         .projects__grid {
             display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(auto, 1fr);
+            gap: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .projects {
+        .projects__heading {
+            display: inline-block;
+        }
+
+        .hide__project {
+            display: block;
+        }
+
+        .projects__grid {
+            display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(auto, 1fr);
             gap: 30px;

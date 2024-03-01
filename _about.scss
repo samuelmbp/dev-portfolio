@@ -48,3 +48,17 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .about {
+        padding: 80px;
+        
+        .about__body {
+            width: 100%;
+
+            .about__heading {
+                text-align: left;
+            }
+        }
+    }
+}

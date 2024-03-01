@@ -21,6 +21,7 @@ body {
 }
 
 .header {
+  height: 120px;
   display: flex;
   justify-content: space-between;
   gap: 38px;
@@ -46,7 +47,46 @@ body {
 
 @media screen and (min-width: 768px) {
   .header {
-    padding: 35px 95px;
+    padding: 25px 75px;
+  }
+  .header .font__normal {
+    font-weight: 400;
+  }
+  .header .header__desktop {
+    display: block;
+    font-size: 20px;
+  }
+  .header .header__logo {
+    display: none;
+  }
+  .header .header__menu-icon {
+    display: none;
+  }
+  .header .nav {
+    display: block;
+  }
+  .header .nav .nav__list {
+    display: flex;
+    gap: 38px;
+    list-style: none;
+  }
+  .header .nav .nav__list .nav__item {
+    text-decoration: none;
+    color: #8c9cb1;
+  }
+  .header .nav .nav__list .nav__button {
+    font-size: 14px;
+    background-color: #ffc600;
+    padding: 10px 14px;
+    color: #000;
+    font-weight: 500;
+    border-radius: 12px;
+    border: 1px solid #000;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 55px 95px;
   }
   .header .font__normal {
     font-weight: 400;
@@ -109,6 +149,30 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .intro {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+  .intro .flex__container {
+    width: 65%;
+    text-align: center;
+  }
+  .intro .flex__container .intro__greeting {
+    font-size: 26px;
+  }
+  .intro .flex__container .intro__heading {
+    font-size: 55px;
+  }
+  .intro .flex__container .intro__button {
+    border: 1px solid #000;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 1024px) {
   .intro {
     display: flex;
     flex-direction: column;
@@ -256,6 +320,20 @@ body {
   }
   .projects .projects__grid {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .projects .projects__heading {
+    display: inline-block;
+  }
+  .projects .hide__project {
+    display: block;
+  }
+  .projects .projects__grid {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     gap: 30px;
@@ -295,6 +373,17 @@ body {
     justify-content: center;
     gap: 35px;
     margin-bottom: 20px;
+  }
+  .about .about__body {
+    width: 100%;
+  }
+  .about .about__body .about__heading {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about {
+    padding: 80px;
   }
   .about .about__body {
     width: 100%;
