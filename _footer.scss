@@ -20,4 +20,37 @@
         color: variables.$light-gray;
         margin-top: 20px;
     }
+
+    .footer__email {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+
+        .footer__body {
+            display: flex;
+            gap: 12px;
+            color: variables.$light-gray;
+            // font-weight: 600;
+            font-size: 15px;
+
+            .footer_copyright {
+                margin-top: 0px;
+            }
+
+            .footer__email {
+                display: inline-block;
+                text-decoration: none;
+                color: variables.$light-gray;
+            }
+
+            .email__icon {
+                margin-right: 4px;
+            }
+        }
+    }
 }

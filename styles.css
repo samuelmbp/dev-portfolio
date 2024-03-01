@@ -320,7 +320,33 @@ body {
   color: #f7fafa;
   margin-top: 20px;
 }
+.footer .footer__email {
+  display: none;
+}
 
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .footer .footer__body {
+    display: flex;
+    gap: 12px;
+    color: #f7fafa;
+    font-size: 15px;
+  }
+  .footer .footer__body .footer_copyright {
+    margin-top: 0px;
+  }
+  .footer .footer__body .footer__email {
+    display: inline-block;
+    text-decoration: none;
+    color: #f7fafa;
+  }
+  .footer .footer__body .email__icon {
+    margin-right: 4px;
+  }
+}
 .underline {
   border-bottom: 4mm solid #fff0ce;
 }/*# sourceMappingURL=styles.css.map */
