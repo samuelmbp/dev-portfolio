@@ -1,3 +1,5 @@
+@use "./variables";
+
 .skills {
     height: 300px;
     padding: 20px;
@@ -6,6 +8,11 @@
 
     .skills__heading {
         margin-bottom: 45px;
+        display: inline-block;
+    }
+
+    .skills__description-desktop {
+        display: none;
     }
 
     .skills__icons {
@@ -20,6 +27,34 @@
         .skills__icon {
             width: 50px;
             height: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .skills {
+        margin-bottom: 220px;
+
+        .skills__body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            .skills__description-desktop {
+                display: block;
+                align-items: center;
+                width: 45%;
+                margin-bottom: 45px;
+                color: variables.$dark-gray;
+            }
+        }
+
+        .skills__icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
         }
     }
 }
