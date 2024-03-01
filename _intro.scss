@@ -2,7 +2,7 @@
 
 .intro {
     height: 550px;
-    // background-color: variables.$light-gray;
+    background-color: variables.$light-gray;
     margin: 12px;
     padding: 20px;
 
@@ -30,7 +30,7 @@
 
 @media screen and (min-width: 768px) {
     .intro {
-        background-color: variables.$light-gray;
+        // background-color: variables.$light-gray;
         display: flex;
         flex-direction: column;
         justify-content: center;
