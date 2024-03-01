@@ -262,23 +262,47 @@ body {
   }
 }
 .about {
-  padding: 35px;
-  margin-bottom: 100px;
+  height: 650px;
+  padding: 25px;
+  margin-bottom: 260px;
 }
-.about .about__heading {
+.about .about__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about .about__body .about__heading {
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 55px;
+  margin-top: 55px;
+}
+.about .about__body .about__description {
+  color: #8c9cb1;
+}
+.about .about__body .second__paragraph {
+  margin-top: 20px;
 }
 .about .about__image {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.about .about__description {
-  margin-top: 30px;
-  color: #8c9cb1;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
+@media screen and (min-width: 760px) {
+  .about {
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 20px;
+  }
+  .about .about__body {
+    width: 100%;
+  }
+  .about .about__body .about__heading {
+    text-align: left;
+  }
+}
 .footer {
   background-color: #070f2b;
   padding: 20px;

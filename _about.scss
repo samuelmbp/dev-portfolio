@@ -1,21 +1,50 @@
 @use "./variables";
 
 .about {
-    padding: 35px;
-    margin-bottom: 100px;
+    height: 650px;
+    padding: 25px;
+    margin-bottom: 260px;
 
-    .about__heading {
-        text-align: center;
-        margin-bottom: 70px;
+    .about__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .about__heading {
+            text-align: center;
+            margin-bottom: 55px;
+            margin-top: 55px;
+        }
+
+        .about__description {
+            color: variables.$dark-gray;
+        }
+
+        .second__paragraph {
+            margin-top: 20px;
+        }
     }
 
     .about__image {
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
+}
 
-    .about__description {
-        margin-top: 30px;
-        color: variables.$dark-gray;
+@media screen and (min-width: 760px) {
+    .about {
+        padding: 120px;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        margin-bottom: 20px;
+
+        .about__body {
+            width: 100%;
+
+            .about__heading {
+                text-align: left;
+            }
+        }
     }
 }
