@@ -1,4 +1,4 @@
-@use "./variables";
+@use "./variables" as *;
 
 * {
     margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    color: variables.$primary-color;
+    color: $primary-color;
     background-color: #fffdf6;
 }
 

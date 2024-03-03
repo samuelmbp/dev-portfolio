@@ -1,4 +1,4 @@
-@use "./variables";
+@use "./variables" as *;
 
 .skills {
     height: 300px;
@@ -47,7 +47,7 @@
                 text-align: center;
                 width: 65%;
                 margin-bottom: 45px;
-                color: variables.$dark-gray;
+                color: $dark-gray;
             }
         }
 

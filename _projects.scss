@@ -1,4 +1,4 @@
-@use "./variables";
+@use "./variables" as *;
 
 .projects {
     // margin: 4px;
@@ -24,23 +24,25 @@
         margin-top: 12px;
 
         .image__container {
-            background-color: variables.$light-gray;
+            height: 225px;
+            background-color: aqua;
+            border-radius: 8px;
+
             // overflow: hidden;
         }
 
         .projects__card-image {
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
+            border-radius: 8px;
             object-fit: cover;
             width: 100%;
-            height: 220px;
+            height: 225px;
         }
 
         .projects__card-body {
             margin-top: 24px;
 
             .projects__card-language {
-                color: variables.$secondary-color;
+                color: $secondary-color;
                 font-size: 12px;
             }
 
@@ -51,7 +53,7 @@
 
             .projects__card-description {
                 margin-top: 24px;
-                color: variables.$dark-gray;
+                color: $dark-gray;
             }
 
             .card__buttons {
@@ -69,7 +71,7 @@
 
                 .card__button {
                     text-decoration: none;
-                    color: variables.$primary-color;
+                    color: $primary-color;
                     font-size: 12px;
                 }
             }
@@ -108,7 +110,6 @@
 
 @media screen and (min-width: 1440px) {
     .projects {
-        justify-content: space-evenly;
         margin-bottom: 120px;
 
         .projects__grid {
