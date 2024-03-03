@@ -21,6 +21,7 @@ body {
 }
 
 .header {
+  height: 120px;
   display: flex;
   justify-content: space-between;
   gap: 38px;
@@ -46,7 +47,46 @@ body {
 
 @media screen and (min-width: 768px) {
   .header {
-    padding: 35px 95px;
+    padding: 25px 75px;
+  }
+  .header .font__normal {
+    font-weight: 400;
+  }
+  .header .header__desktop {
+    display: block;
+    font-size: 20px;
+  }
+  .header .header__logo {
+    display: none;
+  }
+  .header .header__menu-icon {
+    display: none;
+  }
+  .header .nav {
+    display: block;
+  }
+  .header .nav .nav__list {
+    display: flex;
+    gap: 38px;
+    list-style: none;
+  }
+  .header .nav .nav__list .nav__item {
+    text-decoration: none;
+    color: #8c9cb1;
+  }
+  .header .nav .nav__list .nav__button {
+    font-size: 14px;
+    background-color: #ffc600;
+    padding: 10px 14px;
+    color: #000;
+    font-weight: 500;
+    border-radius: 12px;
+    border: 1px solid #000;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 55px 95px;
   }
   .header .font__normal {
     font-weight: 400;
@@ -110,6 +150,30 @@ body {
 
 @media screen and (min-width: 768px) {
   .intro {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+  .intro .flex__container {
+    width: 65%;
+    text-align: center;
+  }
+  .intro .flex__container .intro__greeting {
+    font-size: 26px;
+  }
+  .intro .flex__container .intro__heading {
+    font-size: 55px;
+  }
+  .intro .flex__container .intro__button {
+    border: 1px solid #000;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,7 +225,7 @@ body {
 
 @media screen and (min-width: 760px) {
   .skills {
-    margin-bottom: 160px;
+    margin-bottom: 120px;
   }
   .skills .skills__body {
     display: flex;
@@ -171,8 +235,8 @@ body {
   }
   .skills .skills__body .skills__description-desktop {
     display: block;
-    align-items: center;
-    width: 45%;
+    text-align: center;
+    width: 65%;
     margin-bottom: 45px;
     color: #8c9cb1;
   }
@@ -180,7 +244,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .skills .skills__icons {
+    gap: 55px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .skills .skills__body .skills__description-desktop {
+    width: 40%;
+  }
+  .skills .skills__icons {
+    gap: 65px;
   }
 }
 .projects {
@@ -189,7 +266,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 45px;
-  margin-bottom: 100px;
 }
 .projects .hide__project {
   display: none;
@@ -256,15 +332,36 @@ body {
   }
   .projects .projects__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     gap: 30px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .projects .projects__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .projects {
+    justify-content: space-evenly;
+    margin-bottom: 120px;
+  }
+  .projects .projects__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+  }
+}
 .about {
-  height: 650px;
   padding: 25px;
-  margin-bottom: 260px;
+  margin-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .about .about__body {
   display: flex;
@@ -284,6 +381,7 @@ body {
 }
 .about .about__image {
   width: 100%;
+  height: 400px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -291,16 +389,24 @@ body {
 @media screen and (min-width: 760px) {
   .about {
     padding: 120px;
-    display: flex;
-    justify-content: center;
-    gap: 35px;
     margin-bottom: 20px;
   }
-  .about .about__body {
-    width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .about {
+    margin: 45px;
+    padding: 35px 40px;
+    flex-direction: row;
+    gap: 45px;
   }
   .about .about__body .about__heading {
     text-align: left;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about {
+    padding: 0 160px;
+    margin-bottom: 120px;
   }
 }
 .footer {

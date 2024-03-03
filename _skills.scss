@@ -34,7 +34,7 @@
 
 @media screen and (min-width: 760px) {
     .skills {
-        margin-bottom: 160px;
+        margin-bottom: 120px;
 
         .skills__body {
             display: flex;
@@ -44,8 +44,8 @@
 
             .skills__description-desktop {
                 display: block;
-                align-items: center;
-                width: 45%;
+                text-align: center;
+                width: 65%;
                 margin-bottom: 45px;
                 color: variables.$dark-gray;
             }
@@ -55,7 +55,29 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 60px;
+            gap: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .skills {
+        .skills__icons {
+            gap: 55px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .skills {
+        .skills__body {
+            .skills__description-desktop {
+                width: 40%;
+            }
+        }
+
+        .skills__icons {
+            gap: 65px;
         }
     }
 }
