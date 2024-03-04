@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #2d2e32;
 }
@@ -51,6 +55,10 @@ body {
 
 @media screen and (min-width: 768px) {
   .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
     padding: 25px 75px;
   }
   .header .font__normal {
@@ -366,8 +374,8 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .about {
-    margin: 95px 0;
-    padding: 0 40px;
+    margin: 160px 0px;
+    padding: 0 15px;
     flex-direction: row;
   }
   .about .about__body {

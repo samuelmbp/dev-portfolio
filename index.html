@@ -21,11 +21,11 @@
 
             <nav class="nav">
                 <ul class="nav__list">
-                    <li><a class="nav__item" href="#">Home</a></li>
-                    <li><a class="nav__item" href="#">Projects</a></li>
-                    <li><a class="nav__item" href="#">About</a></li>
+                    <li><a class="nav__item" href="#home">Home</a></li>
+                    <li><a class="nav__item" href="#projects">Projects</a></li>
+                    <li><a class="nav__item" href="#about">About</a></li>
                     <li>
-                        <a class="nav__item nav__button" href="#"
+                        <a class="nav__item nav__button" href="#footer"
                             >Get in Touch</a
                         >
                     </li>
@@ -33,21 +33,25 @@
             </nav>
         </header>
 
-        <section class="intro">
+        <section id="home" class="intro">
             <div class="flex__container">
                 <p class="intro__greeting">Hello. I'm Samuel.</p>
                 <h1 class="intro__heading">
                     A Junior <span class="underline">Software</span>
                     <span class="underline">Developer</span> based in the UK.
                 </h1>
-                <a class="intro__button" href="#">View my work </a>
+                <a class="intro__button" href="#projects">View my work </a>
             </div>
 
-            <img class="intro__hero intro__hero-hide" src="./assets/developer.png" alt="Developer" />
+            <img
+                class="intro__hero intro__hero-hide"
+                src="./assets/developer.png"
+                alt="Developer"
+            />
         </section>
 
         <main>
-            <section class="skills">
+            <section id="skills" class="skills">
                 <div class="skills__body">
                     <h2 class="skills__heading underline">Technical Skills.</h2>
                     <p class="skills__description skills__description-desktop">
@@ -104,7 +108,7 @@
                 </div>
             </section>
 
-            <section class="projects">
+            <section id="projects" class="projects">
                 <h2 class="projects__heading underline">Projects.</h2>
 
                 <div class="projects__grid">
@@ -314,7 +318,7 @@
                 </div>
             </section>
 
-            <section class="about">
+            <section id="about" class="about">
                 <img
                     class="about__image"
                     src="./assets/avatar.jpeg"
@@ -346,7 +350,7 @@
             </section>
         </main>
 
-        <footer class="footer">
+        <footer id="footer" class="footer">
             <div class="footer__icons">
                 <a class="footer__link" href=""
                     ><img class="footer__icon" src="./assets/github.svg" alt=""
