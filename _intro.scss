@@ -21,9 +21,13 @@
         background-color: $secondary-color;
         color: #fff;
         text-decoration: none;
-        padding: 22px 32px;
+        padding: 16px 42px;
         border-radius: 50px;
         cursor: pointer;
+    }
+
+    .intro__hero-hide {
+        display: none;
     }
 }
 
@@ -35,7 +39,6 @@
         align-items: center;
 
         .flex__container {
-            // width: 65%;
             text-align: center;
 
             .intro__greeting {
@@ -54,5 +57,29 @@
                 padding: 16px 42px;
             }
         }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .intro {
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 35px;
+        margin: 20px;
+
+        .intro__hero-hide {
+            display: block;
+            width: 100%;
+            background-color: $light-gray;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .intro {
+        padding: 55px;
+        margin: 35px;
     }
 }
