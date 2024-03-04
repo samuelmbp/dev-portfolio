@@ -7,6 +7,8 @@
     gap: 38px;
     align-items: center;
     padding: 18px;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 
     .nav {
         display: none;
@@ -60,16 +62,17 @@
                 .nav__item {
                     text-decoration: none;
                     color: $dark-gray;
+                    color: $dark-gray;
                 }
 
                 .nav__button {
                     font-size: 14px;
                     background-color: $secondary-color;
+                    color: #fff;
                     padding: 10px 14px;
-                    color: $dark-color;
                     font-weight: 500;
-                    border-radius: 12px;
-                    border: 1px solid $dark-color;
+                    border-radius: 20px;
+                    border: 1px solid $dark-gray;
                 }
             }
         }
@@ -79,46 +82,5 @@
 @media screen and (min-width: 1024px) {
     .header {
         padding: 55px 95px;
-
-        .font__normal {
-            font-weight: 400;
-        }
-
-        .header__desktop {
-            display: block;
-            font-size: 20px;
-        }
-
-        .header__logo {
-            display: none;
-        }
-        .header__menu-icon {
-            display: none;
-        }
-
-        .nav {
-            display: block;
-
-            .nav__list {
-                display: flex;
-                gap: 38px;
-                list-style: none;
-
-                .nav__item {
-                    text-decoration: none;
-                    color: $dark-gray;
-                }
-
-                .nav__button {
-                    font-size: 14px;
-                    background-color: $secondary-color;
-                    padding: 10px 14px;
-                    color: $dark-color;
-                    font-weight: 500;
-                    border-radius: 12px;
-                    border: 1px solid $dark-color;
-                }
-            }
-        }
     }
 }

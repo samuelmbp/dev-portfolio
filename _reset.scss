@@ -8,10 +8,15 @@
 
 body {
     color: $primary-color;
-    background-color: #fffdf6;
 }
 
 h2,
 h3 {
     font-weight: 500;
+    // color: $secondary-color;
+    // color: $dark-gray;
+}
+
+p {
+    color: $dark-gray;
 }

@@ -1,12 +1,11 @@
 @use "./variables" as *;
 
 .projects {
-    // margin: 4px;
+    background-color: $light-gray;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 45px;
 
     .hide__project {
         display: none;
@@ -15,6 +14,7 @@
     .projects__heading {
         text-align: center;
         margin-bottom: 45px;
+        margin-top: 55px;
     }
 
     .projects__card {
@@ -22,10 +22,11 @@
         // width: 380px; // Responsive on all other mobile devices.
         height: 550px;
         margin-top: 12px;
+        margin-bottom: 55px;
 
         .image__container {
             height: 225px;
-            background-color: aqua;
+            background-color: $dark-gray;
             border-radius: 8px;
 
             // overflow: hidden;
