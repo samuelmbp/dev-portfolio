@@ -108,19 +108,20 @@ body {
   }
 }
 .intro {
-  height: 650px;
+  height: 750px;
   background-color: #f9f9f9;
-  padding: 35px;
+  padding: 35px 55px;
+  text-align: left;
 }
 .intro .intro__greeting {
-  margin-top: 20px;
+  margin-top: 100px;
   margin-bottom: 20px;
   font-size: 18px;
 }
 .intro .intro__heading {
   font-size: 44px;
   font-weight: bold;
-  margin-bottom: 80px;
+  margin-bottom: 90px;
 }
 .intro .intro__button {
   background-color: #147efb;
@@ -136,6 +137,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .intro {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,10 +147,11 @@ body {
     text-align: center;
   }
   .intro .flex__container .intro__greeting {
-    font-size: 26px;
+    margin-top: 0;
+    font-size: 22px;
   }
   .intro .flex__container .intro__heading {
-    font-size: 55px;
+    font-size: 64px;
   }
   .intro .flex__container .intro__button {
     border: 1px solid #2d2e32;
@@ -175,6 +178,9 @@ body {
   .intro .flex__container {
     text-align: left;
   }
+  .intro .intro__heading {
+    margin-bottom: 56px;
+  }
   .intro .intro__hero-hide {
     display: block;
     width: 100%;
@@ -182,8 +188,8 @@ body {
 }
 @media screen and (min-width: 1440px) {
   .intro {
-    padding: 45px 50px;
-    margin: 35px;
+    padding: 45px 80px;
+    margin-top: 0;
   }
 }
 .skills {
@@ -251,11 +257,11 @@ body {
   }
 }
 .projects {
-  background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #f9f9f9;
 }
 .projects .hide__project {
   display: none;
@@ -273,7 +279,7 @@ body {
 }
 .projects .projects__card .image__container {
   height: 225px;
-  background-color: #555;
+  background-color: #CAEDFF;
   border-radius: 8px;
 }
 .projects .projects__card .projects__card-image {

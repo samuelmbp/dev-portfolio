@@ -1,11 +1,11 @@
 @use "./variables" as *;
 
 .projects {
-    background-color: $light-gray;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $light-gray;
 
     .hide__project {
         display: none;
@@ -26,7 +26,7 @@
 
         .image__container {
             height: 225px;
-            background-color: $dark-gray;
+            background-color: $light-secondary;
             border-radius: 8px;
 
             // overflow: hidden;

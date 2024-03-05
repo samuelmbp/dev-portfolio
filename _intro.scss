@@ -1,12 +1,13 @@
 @use "./variables" as *;
 
 .intro {
-    height: 650px;
+    height: 750px;
     background-color: $light-gray;
-    padding: 35px;
+    padding: 35px 55px;
+    text-align: left;
 
     .intro__greeting {
-        margin-top: 20px;
+        margin-top: 100px;
         margin-bottom: 20px;
         font-size: 18px;
     }
@@ -14,7 +15,7 @@
     .intro__heading {
         font-size: 44px;
         font-weight: bold;
-        margin-bottom: 80px;
+        margin-bottom: 90px;
     }
 
     .intro__button {
@@ -33,6 +34,8 @@
 
 @media screen and (min-width: 768px) {
     .intro {
+        height: 100vh;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -42,11 +45,12 @@
             text-align: center;
 
             .intro__greeting {
-                font-size: 26px;
+                margin-top: 0;
+                font-size: 22px;
             }
 
             .intro__heading {
-                font-size: 55px;
+                font-size: 64px;
             }
 
             .intro__button {
@@ -79,6 +83,10 @@
             text-align: left;
         }
 
+        .intro__heading {
+            margin-bottom: 56px;
+        }
+
         .intro__hero-hide {
             display: block;
             width: 100%;
@@ -88,7 +96,7 @@
 
 @media screen and (min-width: 1440px) {
     .intro {
-        padding: 45px 50px;
-        margin: 35px;
+        padding: 45px 80px;
+        margin-top: 0;
     }
 }
