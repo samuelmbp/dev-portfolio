@@ -65,7 +65,13 @@
                 .nav__item {
                     text-decoration: none;
                     color: $dark-gray;
-                    color: $dark-gray;
+                    transition: background-color 0.3s ease;
+                    border-radius: 10px;
+                    padding: 5px 10px;
+                }
+
+                .nav__item:hover {
+                    background-color: $light-secondary;
                 }
 
                 .nav__button {
@@ -77,6 +83,10 @@
                     border-radius: 20px;
                     border: 1px solid $dark-gray;
                 }
+
+                .nav__button:hover {
+                    color: $dark-gray;
+                }
             }
         }
     }
@@ -84,6 +94,7 @@
 
 @media screen and (min-width: 1024px) {
     .header {
+        // justify-content: space-eve;
         padding: 35px 95px;
     }
 }

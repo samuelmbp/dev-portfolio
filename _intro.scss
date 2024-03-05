@@ -55,6 +55,12 @@
                 background-color: $secondary-color;
                 color: #fff;
                 padding: 16px 42px;
+                transition: background-color 0.3s ease;
+            }
+
+            .intro__button:hover {
+                background-color: $light-secondary;
+                color: $dark-gray;
             }
         }
     }
@@ -65,21 +71,24 @@
         background-color: #fff;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         padding: 35px;
         margin: 20px;
+
+        .flex__container {
+            text-align: left;
+        }
 
         .intro__hero-hide {
             display: block;
             width: 100%;
-            background-color: $light-gray;
         }
     }
 }
 
 @media screen and (min-width: 1440px) {
     .intro {
-        padding: 55px;
+        padding: 45px 50px;
         margin: 35px;
     }
 }

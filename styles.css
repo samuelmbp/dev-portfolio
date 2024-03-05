@@ -82,7 +82,12 @@ body {
   .header .nav .nav__list .nav__item {
     text-decoration: none;
     color: #555;
-    color: #555;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  .header .nav .nav__list .nav__item:hover {
+    background-color: #CAEDFF;
   }
   .header .nav .nav__list .nav__button {
     font-size: 14px;
@@ -92,6 +97,9 @@ body {
     font-weight: 500;
     border-radius: 20px;
     border: 1px solid #555;
+  }
+  .header .nav .nav__list .nav__button:hover {
+    color: #555;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -148,6 +156,11 @@ body {
     background-color: #147efb;
     color: #fff;
     padding: 16px 42px;
+    transition: background-color 0.3s ease;
+  }
+  .intro .flex__container .intro__button:hover {
+    background-color: #CAEDFF;
+    color: #555;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -155,19 +168,21 @@ body {
     background-color: #fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     padding: 35px;
     margin: 20px;
+  }
+  .intro .flex__container {
+    text-align: left;
   }
   .intro .intro__hero-hide {
     display: block;
     width: 100%;
-    background-color: #f9f9f9;
   }
 }
 @media screen and (min-width: 1440px) {
   .intro {
-    padding: 55px;
+    padding: 45px 50px;
     margin: 35px;
   }
 }
