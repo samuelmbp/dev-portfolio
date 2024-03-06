@@ -18,8 +18,7 @@
     }
 
     .projects__card {
-        width: 290px; // Responsive (IPHONE SE)
-        // width: 380px; // Responsive on all other mobile devices.
+        width: 290px;
         height: 550px;
         margin-top: 12px;
         margin-bottom: 55px;
@@ -28,8 +27,6 @@
             height: 225px;
             background-color: $light-secondary;
             border-radius: 8px;
-
-            // overflow: hidden;
         }
 
         .projects__card-image {
@@ -101,18 +98,6 @@
 
 @media screen and (min-width: 1024px) {
     .projects {
-        .projects__grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(auto, 1fr);
-        }
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .projects {
-        margin-bottom: 120px;
-
         .projects__grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);

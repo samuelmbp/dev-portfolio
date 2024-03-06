@@ -1,6 +1,5 @@
 @use "./variables" as *;
 
 .underline {
-    // border-bottom: 4mm ridge variables.$light-secondary;
     border-bottom: 4mm solid $light-secondary;
 }

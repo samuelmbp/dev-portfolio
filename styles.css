@@ -87,7 +87,7 @@ body {
     padding: 5px 10px;
   }
   .header .nav .nav__list .nav__item:hover {
-    background-color: #CAEDFF;
+    background-color: #caedff;
   }
   .header .nav .nav__list .nav__button {
     font-size: 14px;
@@ -162,7 +162,7 @@ body {
     transition: background-color 0.3s ease;
   }
   .intro .flex__container .intro__button:hover {
-    background-color: #CAEDFF;
+    background-color: #caedff;
     color: #555;
   }
 }
@@ -279,7 +279,7 @@ body {
 }
 .projects .projects__card .image__container {
   height: 225px;
-  background-color: #CAEDFF;
+  background-color: #caedff;
   border-radius: 8px;
 }
 .projects .projects__card .projects__card-image {
@@ -337,16 +337,6 @@ body {
   }
 }
 @media screen and (min-width: 1024px) {
-  .projects .projects__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-  }
-}
-@media screen and (min-width: 1440px) {
-  .projects {
-    margin-bottom: 120px;
-  }
   .projects .projects__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -464,5 +454,5 @@ body {
   }
 }
 .underline {
-  border-bottom: 4mm solid #CAEDFF;
+  border-bottom: 4mm solid #caedff;
 }/*# sourceMappingURL=styles.css.map */
