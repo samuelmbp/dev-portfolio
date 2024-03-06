@@ -421,8 +421,8 @@ body {
 }
 .footer {
   background-color: #2d2e32;
-  padding: 20px;
-  height: 120px;
+  padding: 30px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
